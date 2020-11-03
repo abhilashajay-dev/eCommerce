@@ -1,0 +1,25 @@
+{% extends 'store/main.html' %}
+
+
+{% block head %}
+ 
+ 	<title>Checkout</title>	
+
+{% endblock %}
+
+
+{% block body %}
+ 
+
+<h1>Checkout page!</h1>
+
+{{request.path}}
+
+{% if request.user.is_authenticated %}
+<h2>USER IS LOGGED IN !!!</h2>
+
+{% endif %}
+
+
+
+{% endblock %}
