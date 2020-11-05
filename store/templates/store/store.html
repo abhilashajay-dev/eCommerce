@@ -25,10 +25,12 @@
 		            </figure>
 		            <div class="block-4-text p-4">
 		            	<h6 class=" font-weight-bold" align="left" >{{product.name}}</h6><hr>
+		                <div class="container">
 		                <button data-product="{{product.id}}" data-action="add" class="btn 
 							btn-outline-secondary add-btn update-cart">Add to Cart</button>
-		                <a class="btn btn-outline-success" href="#">View</a>
-		                <h4 style="display: inline-block; float: right"><strong>${{product.price| floatformat:2}}</strong></h4>
+		                <a class="btn btn-outline-success" href="#">View</a><br>
+		            	</div>
+		            	<h4 style="display: inline-block; float: right"><strong>${{product.price| floatformat:2}}</strong></h4>
 		            </div>
 		        </div>
 		    </div>
